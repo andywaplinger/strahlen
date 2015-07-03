@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Strahlen | High Efficiency, Affordable LED lighting for Photographers and Filmmakers</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+
+  <meta name="description" content="High Efficiency, Affordable LED lighting for Photographers and Filmmakers">
+  <link rel="author" href="https://plus.google.com/+Strahlenlights/" />
+
+  <meta property="og:title" content="Strahlen LED Lighting"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="<%= image_url('carousel5.jpg') %>"/>
+  <meta property="og:url" content="http://www.strahlenlights.com"/>
+  <meta property="og:description" content="High Efficiency, Affordable LED lighting for Photographers and Filmmakers"/>
+
+  <%= favicon_link_tag 'favicon.ico' %>
+</head>
+<body style="position: relative" data-spy="scroll" data-target="#feature-nav" data-offset="255">
+
+    <%= render :partial => 'layouts/navbar' %>
+
+    <section id="body-container">
+      <div>
+        <%= yield %>
+      </div>
+    </section>
+
+    <%= render :partial => 'layouts/footer' %>
+
+
+</body>
+</html>

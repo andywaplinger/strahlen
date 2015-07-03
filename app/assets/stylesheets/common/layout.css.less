@@ -1,0 +1,92 @@
+@import 'variables';
+
+
+
+.no-padding{
+  padding: 0;
+}
+
+#close-email-input{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+#nav-container, #sub-nav-container, footer, #opt-in-container, #body-container{
+  width: 100%;
+
+  &>div{
+    max-width: @max-page-width;
+    margin: auto;
+  }
+}
+
+#nav-container{
+  background-color: @transparent-black;
+}
+
+footer{
+  background-color: @black;
+  min-height: 300px;
+}
+
+a:hover, button.btn-link:hover{
+  text-decoration: none;
+}
+
+i:hover{
+  color: @strahlen-yellow;
+}
+
+
+#nav-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  .navbar{
+    margin-bottom: 0;
+  }
+}
+
+#sub-nav-container{
+  background-color: @off-white;
+}
+
+body{
+  background-color: @off-white;
+  font-size: 20px;
+}
+
+body,h1,h2,h3,h4,h5,h6,div,section,header,footer,p{
+  color: @black;
+  font-family: 'proxima_nova-light';
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+
+h4{
+  font-family: proxima_nova-semibold;
+}
+
+h2{
+  color: @grey;
+}
+
+.row{
+  position: relative;
+}

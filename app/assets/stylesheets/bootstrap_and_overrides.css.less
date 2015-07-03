@@ -1,0 +1,71 @@
+@import "twitter/bootstrap/bootstrap";
+@import 'common/variables';
+
+// Set the correct sprite paths
+@iconSpritePath: image-url("twitter/bootstrap/glyphicons-halflings.png");
+@iconWhiteSpritePath: image-url("twitter/bootstrap/glyphicons-halflings-white.png");
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+@fontAwesomeEotPath: asset-url("fontawesome-webfont.eot");
+@fontAwesomeEotPath_iefix: asset-url("fontawesome-webfont.eot?#iefix");
+@fontAwesomeWoffPath: asset-url("fontawesome-webfont.woff");
+@fontAwesomeTtfPath: asset-url("fontawesome-webfont.ttf");
+@fontAwesomeSvgPath: asset-url("fontawesome-webfont.svg#fontawesomeregular");
+
+// Font Awesome
+@import "fontawesome/font-awesome";
+
+// Glyphicons
+//@import "twitter/bootstrap/sprites.less";
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
+//
+// Example:
+// @linkColor: #ff0000;
+
+
+
+//links
+
+@link-color: @black;
+@link-hover-color: @strahlen-yellow;
+
+//buttons
+
+
+
+//regular nav
+@navbar-bg: #fff;
+@navbar-inverse-link-color: #fff;
+@navbar-inverse-link-hover-color: @strahlen-yellow;
+@navbar-link-hover-color: @strahlen-yellow;
+@navbar-link-active-color: @strahlen-yellow;
+@navbar-link-active-bg: @navbar-bg;
+
+
+@navbar-default-link-active-color: #0033ff;
+//inverse nav
+@navbar-inverse-bg: rgba(1,1,1,0);
+
+
+@navbar-default-link-color: #ff0000;
+
+
+@navbar-margin-bottom: 0px;
+
+
+
+.navbar.center .navbar-collapse {
+  text-align: center;
+}
+
+.navbar.center .navbar-collapse .nav {
+  display:inline-block;
+  float: none;
+}

@@ -1,0 +1,38 @@
+<footer class="row">
+  <div class="col-md-12">
+    <div class="row" style="margin-top: 60px">
+      <div class="col-md-2 col-md-offset-5">
+        <div class="row">
+
+          <div class="col-xs-4 text-center"><%= link_to(fa_icon('facebook'), facebook_link, :target => '_blank') %></div>
+          <div class="col-xs-4 text-center"><%= link_to(fa_icon('twitter'), twitter_link, :target => '_blank') %></div>
+          <div class="col-xs-4 text-center"><%= link_to(fa_icon('google-plus'), google_plus_link, :target => '_blank') %></div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 divider-row">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <ul class="list-inline">
+          <li><%= link_to('FAQ', faqs_path) %></li>
+          <li><%= link_to('Privacy Policy', privacy_path) %></li>
+          <li><%= link_to('Terms and Conditions', terms_path) %></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 text-center copyright">
+        &copy; <%= Time.now.year %> Strahlen LLC.
+      </div>
+    </div>
+
+  </div>
+</footer>

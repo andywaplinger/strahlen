@@ -1,0 +1,106 @@
+@import 'common/variables';
+
+.product-title-text{
+  font-size: 55px;
+  padding-left: 0;
+  &>div{
+    padding-left: 5px;
+    display: inline-block;
+    line-height: 40px;
+    border-bottom: 2px solid @strahlen-yellow;
+  }
+}
+
+.product-specs{
+  padding-top: 35px;
+}
+
+.row.odd{
+  background-color: @white;
+  border-top: 1px solid @light-grey;
+  border-bottom: 1px solid @light-grey;
+}
+
+.border-right{
+  border-right: 1px solid @strahlen-yellow;
+}
+
+
+.led-spec-col{
+  &>div:first-child>div{
+    font-family: proxima_nova;
+    font-size: 35px;
+    line-height: 30px;
+    color: @black;
+  }
+  &>div:last-child>div{
+    font-family: proxima_nova;
+    font-size: 24px;
+    color: @grey;
+  }
+}
+
+.built-spec-col{
+  &>div:first-child>div{
+    font-family: proxima_nova;
+    font-size: 60px;
+    line-height: 50px;
+    color: @black;
+  }
+  &>div:last-child>div{
+    font-family: proxima_nova;
+    font-size: 24px;
+    color: @grey;
+  }
+}
+
+.creative-col{
+  &>div:first-child>div{
+    font-family: proxima_nova;
+    font-size: 30px;
+    line-height: 30px;
+    color: @black;
+  }
+  &>div:last-child>div{
+    font-family: proxima_nova;
+    font-size: 24px;
+    color: @grey;
+  }
+}
+
+
+table{
+  tr{
+    td{
+      padding-right: 20px;
+    }
+  }
+
+  tr:first-child>td{
+    font-size: 25px;
+    line-height: 25px;
+    vertical-align: bottom;
+  }
+
+  tr:not(:first-child){
+    td{
+      vertical-align: top;
+    }
+    &>td:first-child{
+      font-size: 25px;
+      line-height: 25px;
+    }
+  }
+
+  tr:not(:first-child)>td:not(:first-child){
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+#specs-container{
+  font-size: 16px;
+  &>div.row>div:first-child{
+    font-family: proxima_nova-semibold;
+  }
+}
